@@ -1,0 +1,111 @@
+/* src/pages/PotionMaker.css */
+
+.potion-maker {
+  padding: 40px 20px;
+  min-height: 80vh;
+  
+  color: #eee;
+  font-family: 'Cinzel', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.potion-maker h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #d4af37;
+  text-shadow: 0 0 10px #a67c00;
+}
+
+.potion-maker p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: #ccc;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.ingredient-button {
+  background: linear-gradient(145deg, #3a2e24, #6b4c3b);
+  border: 2px solid #c19a6b;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 15px #c19a6b;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.ingredient-button:hover {
+  background: linear-gradient(145deg, #6b4c3b, #3a2e24);
+  box-shadow: 0 0 25px #f5deb3;
+  color: #f5deb3;
+  border-color: #f5deb3;
+  transform: scale(1.05);
+}
+
+.ingredient-button.selected {
+  background: linear-gradient(145deg, #d4af37, #a67c00);
+  color: #3a2e24;
+  border-color: #a67c00;
+  box-shadow: 0 0 25px #d4af37;
+  cursor: default;
+  transform: scale(1.1);
+}
+
+.brew-button,
+.reset-button {
+  background: linear-gradient(145deg, #6b4c3b, #3a2e24);
+  border: 2px solid #c19a6b;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 15px #c19a6b;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  user-select: none;
+  margin: 0 10px 2rem 10px;
+  min-width: 120px;
+}
+
+.brew-button:hover:not(:disabled),
+.reset-button:hover {
+  background: linear-gradient(145deg, #3a2e24, #6b4c3b);
+  box-shadow: 0 0 25px #f5deb3;
+  color: #f5deb3;
+  border-color: #f5deb3;
+  transform: scale(1.05);
+}
+
+.brew-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.potion-result {
+  font-size: 1.4rem;
+  max-width: 600px;
+  color: #d4af37;
+  text-shadow: 0 0 8px #a67c00;
+  user-select: none;
+}

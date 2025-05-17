@@ -1,0 +1,94 @@
+.contracts {
+  padding: 40px 20px;
+ 
+  color: #eee;
+  font-family: 'Cinzel', serif;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.contract-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contract-card {
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 0 10px #000;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.contract-card:hover {
+  transform: scale(1.05);
+}
+
+.contract-card h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.contract-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(145deg, #6b4c3b, #3a2e24);
+  border: 2px solid #c19a6b;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #c19a6b;
+}
+
+.contract-card button:hover {
+  background: linear-gradient(145deg, #3a2e24, #6b4c3b);
+  box-shadow: 0 0 25px #f5deb3;
+  color: #f5deb3;
+  border-color: #f5deb3;
+  transform: scale(1.05);
+}
+
+.decline-btn {
+  background: #700000;
+  border-color: #b22222;
+  box-shadow: 0 0 15px #b22222;
+}
+
+.decline-btn:hover {
+  background: #b22222;
+  box-shadow: 0 0 25px #ff4c4c;
+  border-color: #ff4c4c;
+  color: white;
+  transform: scale(1.05);
+}
+
+.accepted-contracts {
+  margin-top: 40px;
+  background: #222;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.accepted-contracts h3 {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.accepted-contracts ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #eee;
+}

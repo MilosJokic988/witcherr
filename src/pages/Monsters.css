@@ -1,0 +1,48 @@
+.monsters-container {
+  padding: 50px 20px;
+  
+  color: #ddd;
+  min-height: 100vh;
+  font-family: 'Cinzel', serif;
+}
+
+.monster-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.monster-card {
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s;
+}
+
+.monster-card:hover {
+  transform: scale(1.05);
+}
+
+.monster-card img {
+  width: 100%;
+  height: 300px;            /* fiksna visina za sve slike */
+  object-fit: cover;        /* iseče i popuni prostor skladno */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.danger-high {
+  border: 2px solid crimson;
+}
+
+.danger-medium {
+  border: 2px solid orange;
+}
+
+.danger-low {
+  border: 2px solid green;
+}

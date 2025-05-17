@@ -1,0 +1,20 @@
+/* src/pages/About.css */
+.about-container {
+  padding: 60px 20px;
+  
+  color: #ffffff;
+  min-height: 100vh;
+  
+  font-family: 'Cinzel', serif;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
