@@ -14,8 +14,8 @@ html, body, #root {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  background: url('./home.webp') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #000000 
+ 
 }
 .content {
   flex: 1; /* raste da popuni prostor između headera i footera */
